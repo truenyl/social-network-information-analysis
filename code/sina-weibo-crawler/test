@@ -1,0 +1,15 @@
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
+# -*- coding: utf-8 -*-
+from wcrawler import *
+
+if __name__ == '__main__':
+   # please change to your own cookie
+   crawler = WCrawler(cookie = '_T_WM=bb4c6afff73ed1d0dee08028ead48f33; ALF=1494680257; SCF=Arf7JkFEfQhWxnO5vKj4cjSdcouPWlxvby1b1rISEBK2GEDrR2kU0eXwHxccCGY8ZuP82QSvZZCZI3lp2aHCSW8.; SUB=_2A2516wWDDeRhGeNP61YY9SrJzD6IHXVXF6vLrDV6PUJbktBeLRagkW1mdfPG1fQHvHzla9d__8r7YSukfQ..; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W5ldADSqEc3IpZGg8FzVPTJ5JpX5o2p5NHD95QfeK5X1K-XSKMEWs4Dqcj.i--Ri-2piKyhi--Ri-zfi-z7i--ci-z7i-zXi--ciKLhi-2R; SUHB=0vJYR5s2zO_Rbr; SSOLoginState=1492088275', \
+       max_num_weibo = 10, \
+       max_num_fans = 10, \
+       max_num_follow = 500, \
+       wfilter = 'all', \
+       return_type = 'string')
+   print crawler.crawl(url='http://weibo.cn/yaochen')
